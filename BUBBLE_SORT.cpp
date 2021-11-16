@@ -34,6 +34,24 @@ int bubble_sort(int arr[],int n)
    // cout<<"value of i and j  :  "<<i<<"   "<<j<<endl;
     return swap_count;
 }
+////////////BUBBLE SORT RECURSSIVELY////////
+void bubble_sort_recurrsive(int arr[],int n)
+{
+    if(n==1)
+    {
+        return;
+    }
+    for(int i=0;i<n-1;i++)
+    {
+        if(arr[i]>arr[i+1])
+        {
+            swap(&arr[i],&arr[i+1]);
+        }
+    }
+    bubble_sort_recurrsive(arr,n-1);//HERE WE ARE PASSING THE ARRAY THAT PART WHICH IS REQUIRED 
+                                  // THAT IS FOR SECOND TIME WE DONT NEED LAST ELEMENT AS ITS IN SORTED ORDER SO NOW WE WANT TO SORT ARRRAY FROM 
+                                 //0 TO n-1 AND THIS IS HOW IT WORKS
+}
 /*
 IN BUBBLE SORT WE TRAVEL AND IF THE PREVIOUS ELEMENT IS GREATER THAN THE NEXT WE JUST SWAP AND BY THIS
 THE LARGEST ELEMENT GOES TO THE LAST
