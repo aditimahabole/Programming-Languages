@@ -1,0 +1,163 @@
+/*
+Find the names of aircraft such that all pilots certified for them earn more than $80K.
+
+For each pilot who is certified for more than three aircraft, find the eid and the maximum cruisingrange of the aircraft for which they are
+certified
+
+Find the names of pilots whose salary is less than the price of the cheapest route from LA to Honolulu
+
+For all aircraft with cruisingrange > 1000, find the name of the aircraft and the average salary of all pilots certified for it
+
+Find the names of pilots certified on some Boeing aircraft
+
+Find the aids of all aircraft that can be used on routes from LA to Chicago.
+
+Find the eids of employees who make the highest salary
+*/
+---------------FLIGHT TABLE-----------------
+create table flight
+(
+fid int  ,
+acity varchar(20),
+dcity varchar(20),
+dis int ,
+dtime int ,
+atime int ,
+price real,
+foreign key (fid) references plane(aid)
+);
+---------------AIRCRAFT TABLE-----------------
+create table plane 
+(
+aid int primary key,
+aname varchar(20),
+range int 
+);
+-------------CERTIFIED TABLE------------------
+create table cer
+(
+eid int,
+aid int,
+foreign key (eid) references emp(eid),
+foreign key (aid) references plane(aid)
+
+);
+-------------EMPLOYEE TABLE------------------
+create table emp 
+(
+eid int primary key, 
+ename varchar(20),
+salary int 
+);
+------------INSERT INTO FLIGHTS------------
+insert into flight values (101,'delhi','mumbai',300,6,9,10000);
+insert into flight values (102,'delhi','lucknow',100,5,6,1000);
+insert into flight values (103,'mumbai','lucknow',500,3,9,20000);
+insert into flight values (104,'mumbai','lucknow',400,12,3,10000);
+insert into flight values (103,'delhi','lucknow',300,9,12,10000);
+insert into flight values (104,'delhi','pune',300,8,11,10000);
+insert into flight values (102,'pune','delhi',300,9,12,10000);
+insert into flight values (101,'delhi','lucknow',300,9,12,10000);
+------------INSERT INTO PLANES------------
+insert into plane values (101,'A1',10);
+insert into plane values (102,'A2',20);
+insert into plane values (103,'A3',30);
+insert into plane values (104,'A4',40);
+insert into plane values (105,'A5',10);
+------------INSERT INTO CERTIFIED----------
+insert into cer values (111,101);
+insert into cer values (111,102);
+insert into cer values (111,103);
+insert into cer values (111,104);
+insert into cer values (111,105);
+insert into cer values (222,102);
+insert into cer values (333,103);
+insert into cer values (222,101);
+insert into cer values (444,105);
+insert into cer values (444,102);
+insert into cer values (222,103);
+
+------------INSERT INTO EMPLOYEE----------
+insert into emp values (111,'Aditi',500000);
+insert into emp values (222,'Molly',600000);
+insert into emp values (333,'Muskan',700000);
+insert into emp values (444,'Saksham',500);
+----------LETS WRITE QUERIES--------------
+-- 1
+-- select p.aname,e.ename,e.salary from plane p, cer c , emp e 
+-- where p.aid=c.aid AND e.eid=c.eid 
+-- group by e.eid 
+-- having  e.salary>80000 ;
+------------------------------------------
+-- 2
+-- aditi
+-- select e.ename,p.aname,p.range 
+-- from plane p,emp e, cer c 
+-- where p.aid=c.aid AND e.eid=c.eid 
+-- group by c.eid 
+-- having max(p.range) and count(*)>2;
+-- molly
+-- select e.eid,e.ename,p.aname,max(p.range) 
+-- from emp e, plane p, cer c 
+-- where e.eid=c.eid AND p.aid=c.aid 
+-- group by e.eid 
+-- having count(c.aid)>2;
+-------------------------------------------
+-- 3
+-- aditi
+-- select e.ename from emp e
+-- where e.salary <
+-- (select min(price) from flight 
+-- where acity='mumbai' AND dcity ='lucknow');
+-- molly
+-- select e.ename from emp e 
+-- where e.salary < 
+-- (select min( f.price) from flight f 
+-- where f.acity='mumbai' AND f.dcity='lucknow')
+---------------------------------------
+-- 4
+-- aditi
+-- select p.aname, avg(e.salary)
+-- from plane p , cer c , emp e 
+-- where c.eid=e.eid and c.aid=p.aid 
+-- group by c.aid 
+-- having p.range >10;
+-- molly
+-- select p.aname , avg(e.salary)
+-- from plane p , emp e , cer c  
+-- where p.aid=c.aid AND e.eid=c.eid 
+-- group by p.aname 
+-- having  p.range>10;
+---------------------------------------
+-- 5
+-- aditi
+-- select e.ename from emp e ,cer c ,plane p 
+-- where e.eid = c.eid AND c.aid = p.aid 
+-- and p.aname='A1'
+-- molly
+-- select e.ename from emp e , cer c , plane p 
+-- where e.eid=c.eid AND p.aid=c.aid
+-- AND p.aname='A1';
+---------------------------------------
+-- 6
+-- aditi
+-- select p.aid from plane p , flight f 
+-- where f.fid=p.aid 
+-- and f.acity='delhi'AND f.dcity='lucknow';
+-- molly
+-- select p.aid from plane p, flight f 
+-- where f.fid=p.aid AND f.acity='mumbai'
+-- AND f.dcity='lucknow';
+----------------------------------------- 
+-- 7
+-- aditi
+-- select eid,ename from emp e 
+-- where salary =
+-- (select max(salary) 
+-- from emp e);
+-- molly
+-- select  e1.eid,max(e1.salary)
+-- from emp e1 ,emp e2
+-- where e1.salary>e2.salary 
+-- and e1.eid!=e2.eid;
+--------------------------------------
