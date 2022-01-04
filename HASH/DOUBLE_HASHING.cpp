@@ -57,15 +57,16 @@ class double_hash
                     hash_table[index3]=data;//data inserted
                     break;//break after insert from loop
                 }
-                i++;
+                i++;//change value of i whenever collison happens
             }
         }
         
         else//if by using hash1 only we get vacant space  then simply insert
         {
             hash_table[index1]=data;
-            curr_size++;
+            
         }
+        curr_size++;
     }
     ///////////////SEARCH//////////
     void search(int data)
