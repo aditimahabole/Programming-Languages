@@ -1,3 +1,15 @@
+//vector used 
+//map used (index,vector)
+//preorder traversal done
+//hd is horizontal distance initially 0 that is of root element here root is 1 having hd=0
+//YOU CAN VISVUALIZE AS BELOW RIGHT HAND SIDE IS DATA IN VECTOR FORM :
+// horzontal distance : -2--->  4  
+// horzontal distance : -1--->  2  
+// horzontal distance :  0--->  1  5  6  
+// horzontal distance :  1--->  3  8  
+// horzontal distance :  2--->  7  
+// horzontal distance :  3--->  9 
+
 #include <iostream>
 #include <vector>
 #include <map>
