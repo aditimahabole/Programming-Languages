@@ -25,11 +25,11 @@ void get_vertical_order(node* root,int hd ,map<int,vector<int>> &m)
         return;
     }
     m[hd].push_back(root->data);
-    cout<<"node->left->data : "<<root->data<<" having horizontal distance : "<<hd<<endl;
+    cout<<"node->data BEFORE LEFT FUNCTION : "<<root->data<<" having horizontal distance : "<<hd<<endl;
     
     get_vertical_order(root->left,hd-1,m);
     cout<<"left part done"<<endl;
-    cout<<"node->right->data : "<<root->data<<" having horizontal distance : "<<hd<<endl;
+    cout<<"node->data BEFORE RIGHT FUNCTION: "<<root->data<<" having horizontal distance : "<<hd<<endl;
     get_vertical_order(root->right,hd+1,m);
     cout<<"right part done"<<endl;
 }
