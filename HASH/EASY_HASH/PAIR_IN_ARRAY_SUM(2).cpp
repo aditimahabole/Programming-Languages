@@ -16,17 +16,14 @@ void print_pair(int arr[],int n,int sum)
     {
         
         int temp=sum-arr[i];
-        if(s.find(temp)!=s.end())//temp is found from start to end of hash map
+        if(s.find(temp)!=s.end())//IF ELEMENT IS PRESENT THEN 
+                                //IT FIND() RETURNS POSITION BUT IF NOT THEN IT RETURNS
+                               //MAP.end() THAT IS IN THIS CASE s.end()
         {
             cout<<"PAIR ("<<arr[i]<<" , "<<temp<<") exist"<<endl;
         }
-        s.insert(arr[i]);
-        // s={1} this is hashmap in which elements are stored like this according to loop
-        // s={1,4}
-        // s={1,4,45}
-        // s={1,4,45,6}
-        // s={1,4,45,6,10}
-        // s={1,4,45,6,10,8}
+        s.insert(arr[i]);//IF ELEMENT IS NOT PRESENT  AT THAT INDEX THEN SIMPLY INSERT 
+       
     }
 }
 
