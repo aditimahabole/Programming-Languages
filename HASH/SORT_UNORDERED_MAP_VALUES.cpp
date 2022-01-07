@@ -1,5 +1,7 @@
 //FOR HELP: 
 //https://www.youtube.com/watch?v=viOV5NMbLxE
+//SORTING A VECTOR PAIR
+//https://www.geeksforgeeks.org/sorting-vector-of-pairs-in-c-set-1-sort-by-first-and-second/
 #include <bits/stdc++.h>
 using namespace std;
 
