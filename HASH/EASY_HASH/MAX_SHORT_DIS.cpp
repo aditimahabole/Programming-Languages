@@ -4,7 +4,7 @@
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
-bool sum_short_end(int arr[],int n,int k)
+int sum_short_end(int arr[],int n,int k)
 {
     unordered_map<int,int> lo;
     for(int i=0;i<n;i++)
@@ -40,4 +40,4 @@ int main()
     cout<<sum_short_end(arr,n,k)<<endl;
     return 0;
 }
-//OUTPUT : 1
+
