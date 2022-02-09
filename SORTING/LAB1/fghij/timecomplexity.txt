@@ -1,0 +1,27 @@
+---------------------------------------------
+QUICK SORT:
+Best Time Complexity : O(nlogn)
+Average Time Complexity : O(nlogn)
+Worst Time Complexity : O(n^2)
+Worst Case will happen when array is sorted.
+---------------------------------------------
+MERGE SORT:
+Best Time Complexity : O(nlogn)
+Average Time Complexity : O(nlogn)
+Worst Time Complexity : O(nlogn)
+---------------------------------------------
+BUBBLE SORT:
+Best Time Complexity : O(n)
+Average Time Complexity : O(n^2)
+Worst Time Complexity : O(n^2)
+---------------------------------------------
+SELECTION SORT:
+Best Time Complexity : O(n^2)
+Average Time Complexity : O(n^2)
+Worst Time Complexity : O(n^2)
+---------------------------------------------
+INSERTION SORT:
+Best Time Complexity : O(n)
+Average Time Complexity : O(n^2)
+Worst Time Complexity : O(n^2)
+---------------------------------------------
