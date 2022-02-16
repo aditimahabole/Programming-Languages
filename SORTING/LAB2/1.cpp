@@ -157,7 +157,7 @@ int main()
             cout<<i<<endl;
             break;
         }
-        else if(arr[i]>x)
+        else if(arr[i]>x || arr[i]==0)
         {
             cout<<binary_search(arr,i/2,i,x);
             break;
