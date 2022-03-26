@@ -24,12 +24,12 @@ class compare
     public:
     bool operator()(huffman_node *a,huffman_node *b)
     {
-        return a->fre>b->fre;
+        return a->fre > b->fre;
     }
     
 };
 
-huffman_node*make_tree(priority_queue<huffman_node*,vector<huffman_node*>,compare> pq)
+huffman_node* make_tree(priority_queue<huffman_node*,vector<huffman_node*>,compare> pq)
 {
     while(pq.size()!=1)
     {
@@ -37,11 +37,12 @@ huffman_node*make_tree(priority_queue<huffman_node*,vector<huffman_node*>,compar
         pq.pop();
         huffman_node* right=pq.top();
         pq.pop();
-        huffman_node* node=new huffman_node('@',left->fre+right->fre);
+        huffman_node* node=new huffman_node('$',left->fre+right->fre);
         node->left=left;
         node->right=right;
         pq.push(node);
     }
+    return pq.top();
 }
 void print_codes(huffman_node* root,int arr[],int top)
 {
@@ -55,7 +56,7 @@ void print_codes(huffman_node* root,int arr[],int top)
         arr[top]=1;
         print_codes(root->right,arr,top+1);
     }
-    if(root->left==NULL && root->right==NULL)
+    if(!root->left && !root->right)
     {
         cout<<root->data<<" ";
         for(int i=0;i<top;i++)
@@ -89,7 +90,5 @@ int main()
     int fre[]={5,9,12,13,16,45};
     int n=sizeof(data)/sizeof(data[0]);
     huffman_ke_codes(data,fre,n);
-   
-
-    return 0;
+   return 0;
 }
