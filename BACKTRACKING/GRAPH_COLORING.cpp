@@ -21,8 +21,9 @@ int is_safe(int graph[V][V],int color[])
         {
             if(graph[i][j]&&color[j]==color[i])
             {
-                cout<<"color[j] = "<<color[j]<<" and j = "<<j<<endl;
                 cout<<"color[i] = "<<color[i]<<" and i = "<<i<<endl;
+                cout<<"color[j] = "<<color[j]<<" and j = "<<j<<endl;
+                
                 return 0;
             }
         }
@@ -35,8 +36,10 @@ int graph_coloring(int graph[V][V],int c,int i,int color[V])
     if(i==V)
     {
         //that is reached to last end
+        cout<<"i==v ho gya"<<endl;
         if(is_safe(graph,color))
         {
+            cout<<"print_sol called"<<endl;
             print_sol(color);
             return 1;
         }
@@ -45,6 +48,7 @@ int graph_coloring(int graph[V][V],int c,int i,int color[V])
     for(int j=1;j<=c;j++)
     {
         color[i]=j;
+        cout<<"in loop and graph_coloring called"<<endl;
         if(graph_coloring(graph,c,i+1,color))
         {
             cout<<i<<" ko "<<j<<" color mila badhia"<<endl;
@@ -79,59 +83,104 @@ int main()
 }
 /*
 /tmp/Skw7El1S0k.o
-color[j] = 1 and j = 1
+in loop and graph_coloring called
+in loop and graph_coloring called
+in loop and graph_coloring called
+in loop and graph_coloring called
+i==v ho gya
 color[i] = 1 and i = 0
-galat color
 color[j] = 1 and j = 1
+galat color
+in loop and graph_coloring called
+i==v ho gya
 color[i] = 1 and i = 0
-galat color
 color[j] = 1 and j = 1
+galat color
+in loop and graph_coloring called
+i==v ho gya
 color[i] = 1 and i = 0
-galat color
-galat color
 color[j] = 1 and j = 1
+galat color
+galat color
+in loop and graph_coloring called
+in loop and graph_coloring called
+i==v ho gya
 color[i] = 1 and i = 0
-galat color
 color[j] = 1 and j = 1
+galat color
+in loop and graph_coloring called
+i==v ho gya
 color[i] = 1 and i = 0
-galat color
 color[j] = 1 and j = 1
-color[i] = 1 and i = 0galat color
 galat color
-color[j] = 1 and j = 1
+in loop and graph_coloring called
+i==v ho gya
 color[i] = 1 and i = 0
-galat color
 color[j] = 1 and j = 1
-color[i] = 1 and i = 0
 galat color
+galat color
+in loop and graph_coloring called
+in loop and graph_coloring called
+i==v ho gya
+color[i] = 1 and i = 0
 color[j] = 1 and j = 1
+galat color
+in loop and graph_coloring called
+i==v ho gya
 color[i] = 1 and i = 0
+color[j] = 1 and j = 1
+galat color
+in loop and graph_coloring called
+i==v ho gya
+color[i] = 1 and i = 0
+color[j] = 1 and j = 1
 galat color
 galat color
 galat color
+in loop and graph_coloring called
+in loop and graph_coloring called
+in loop and graph_coloring called
+i==v ho gya
+color[i] = 1 and i = 0
 color[j] = 1 and j = 2
-color[i] = 1 and i = 0
 galat color
+in loop and graph_coloring called
+i==v ho gya
+color[i] = 1 and i = 0
 color[j] = 1 and j = 2
-color[i] = 1 and i = 0
 galat color
+in loop and graph_coloring called
+i==v ho gya
+color[i] = 1 and i = 0
 color[j] = 1 and j = 2
+galat color
+galat color
+in loop and graph_coloring called
+in loop and graph_coloring called
+i==v ho gya
 color[i] = 1 and i = 0
-galat color
-galat color
 color[j] = 1 and j = 3
+galat color
+in loop and graph_coloring called
+i==v ho gya
+color[i] = 2 and i = 1
+color[j] = 2 and j = 2
+galat color
+in loop and graph_coloring called
+i==v ho gya
+color[i] = 2 and i = 1
+color[j] = 2 and j = 2
+galat color
+galat color
+in loop and graph_coloring called
+in loop and graph_coloring called
+i==v ho gya
 color[i] = 1 and i = 0
-galat color
-color[j] = 2 and j = 2
-color[i] = 2 and i = 1
-galat color
-color[j] = 2 and j = 2
-color[i] = 2 and i = 1
-galat color
-galat color
 color[j] = 1 and j = 3
-color[i] = 1 and i = 0
 galat color
+in loop and graph_coloring called
+i==v ho gya
+print_sol called
 Solution Exists: Following are the assigned colors 
   1  2  3  2
 3 ko 2 color mila badhia
