@@ -49,6 +49,7 @@ int graph_coloring(int graph[V][V],int c,int i,int color[V])
     {
         color[i]=j;
         cout<<"in loop and graph_coloring called"<<endl;
+        cout<<i<<"th vertex ko diya"<<color[j]<<endl;
         if(graph_coloring(graph,c,i+1,color))
         {
             cout<<i<<" ko "<<j<<" color mila badhia"<<endl;
@@ -84,53 +85,67 @@ int main()
 /*
 /tmp/Skw7El1S0k.o
 in loop and graph_coloring called
+0th vertex ko diya0
 in loop and graph_coloring called
+1th vertex ko diya1
 in loop and graph_coloring called
+2th vertex ko diya1
 in loop and graph_coloring called
+3th vertex ko diya1
 i==v ho gya
 color[i] = 1 and i = 0
 color[j] = 1 and j = 1
 galat color
 in loop and graph_coloring called
+3th vertex ko diya1
 i==v ho gya
 color[i] = 1 and i = 0
 color[j] = 1 and j = 1
 galat color
 in loop and graph_coloring called
-i==v ho gya
-color[i] = 1 and i = 0
-color[j] = 1 and j = 1
-galat color
-galat color
-in loop and graph_coloring called
-in loop and graph_coloring called
-i==v ho gya
-color[i] = 1 and i = 0
-color[j] = 1 and j = 1
-galat color
-in loop and graph_coloring called
-i==v ho gya
-color[i] = 1 and i = 0
-color[j] = 1 and j = 1
-galat color
-in loop and graph_coloring called
+3th vertex ko diya3
 i==v ho gya
 color[i] = 1 and i = 0
 color[j] = 1 and j = 1
 galat color
 galat color
 in loop and graph_coloring called
+2th vertex ko diya2
 in loop and graph_coloring called
+3th vertex ko diya1
 i==v ho gya
 color[i] = 1 and i = 0
 color[j] = 1 and j = 1
 galat color
 in loop and graph_coloring called
+3th vertex ko diya2
 i==v ho gya
 color[i] = 1 and i = 0
 color[j] = 1 and j = 1
 galat color
 in loop and graph_coloring called
+3th vertex ko diya3
+i==v ho gya
+color[i] = 1 and i = 0
+color[j] = 1 and j = 1
+galat color
+galat color
+in loop and graph_coloring called
+2th vertex ko diya0
+in loop and graph_coloring called
+3th vertex ko diya1
+i==v ho gya
+color[i] = 1 and i = 0
+color[j] = 1 and j = 1
+galat color
+in loop and graph_coloring called
+3th vertex ko diya3
+i==v ho gya
+color[i] = 1 and i = 0
+color[j] = 1 and j = 1
+galat color
+in loop and graph_coloring called
+3th vertex ko diya3
 i==v ho gya
 color[i] = 1 and i = 0
 color[j] = 1 and j = 1
@@ -138,47 +153,59 @@ galat color
 galat color
 galat color
 in loop and graph_coloring called
+1th vertex ko diya0
 in loop and graph_coloring called
+2th vertex ko diya2
 in loop and graph_coloring called
+3th vertex ko diya2
 i==v ho gya
 color[i] = 1 and i = 0
 color[j] = 1 and j = 2
 galat color
 in loop and graph_coloring called
+3th vertex ko diya1
 i==v ho gya
 color[i] = 1 and i = 0
 color[j] = 1 and j = 2
 galat color
 in loop and graph_coloring called
+3th vertex ko diya3
 i==v ho gya
 color[i] = 1 and i = 0
 color[j] = 1 and j = 2
 galat color
 galat color
 in loop and graph_coloring called
+2th vertex ko diya2
 in loop and graph_coloring called
+3th vertex ko diya2
 i==v ho gya
 color[i] = 1 and i = 0
 color[j] = 1 and j = 3
 galat color
 in loop and graph_coloring called
+3th vertex ko diya2
 i==v ho gya
 color[i] = 2 and i = 1
 color[j] = 2 and j = 2
 galat color
 in loop and graph_coloring called
+3th vertex ko diya3
 i==v ho gya
 color[i] = 2 and i = 1
 color[j] = 2 and j = 2
 galat color
 galat color
 in loop and graph_coloring called
+2th vertex ko diya0
 in loop and graph_coloring called
+3th vertex ko diya2
 i==v ho gya
 color[i] = 1 and i = 0
 color[j] = 1 and j = 3
 galat color
 in loop and graph_coloring called
+3th vertex ko diya3
 i==v ho gya
 print_sol called
 Solution Exists: Following are the assigned colors 
