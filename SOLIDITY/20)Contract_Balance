@@ -1,0 +1,31 @@
+//SPDX-License-Identifier: GPL-3.0
+pragma solidity ^0.8.0;
+
+contract Contract_Balance
+{
+    //paying ether
+    //payable keyword-> ka use hum tab karte jab hume uss funtion ke thru ether pay karna ho
+    //that is ether ko apne contract me transfer karne wale hai
+    address payable user = payable(0x78731D3Ca6b7E34aC0F824c42a7cC18A495cabaB);
+
+    function pay_ether()public payable
+    {
+        //khud ke address pe ether send karna
+    }
+
+    function get_balance() public view returns(uint)
+    {
+        return address(this).balance;
+        //address datatype hai ,this keyword hai ki isi address se
+        //iss address se balance kitna hai vo return karo
+
+    }
+
+    function send_ether_account()public
+    {
+        //kisi aur ke address pe ether send karna
+        user.transfer(1 ether);
+
+    }
+
+}
