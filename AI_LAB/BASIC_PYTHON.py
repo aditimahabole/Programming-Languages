@@ -2,6 +2,23 @@
 # BASIC PYTHON SYNTAX 
 import time
 # -----------------------------------------------
+# --math--
+import math
+pi = 3.14
+po = -3.4
+print(round(pi))
+print(math.ceil(pi))
+print(math.floor(pi))
+print(abs(po))
+print(pow(pi,2))
+print(math.sqrt(196))
+a=1
+b=2
+c=3
+d=4
+print(max(a,b,c,d,10))
+print(min(-2,-1,a,b))
+# -----------------------------------------------
 # --string methods --
 name = "aditiiii@"
 print(name)
