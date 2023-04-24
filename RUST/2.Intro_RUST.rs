@@ -54,6 +54,7 @@ pub fn process_instruction(
     }
 
     // Increment and store the number of times the account has been greeted
+    //try_from_slice take account section from bytes and convert to struct type
     let mut greeting_account = GreetingAccount::try_from_slice(&account.data.borrow())?;
     greeting_account.counter += 1;
     greeting_account.serialize(&mut *account.data.borrow_mut())?;
@@ -61,4 +62,7 @@ pub fn process_instruction(
     msg!("Greeted {} time(s)!", greeting_account.counter);
 
     Ok(())
+    //does not have semicolon mean we are returning this
+    //so to return dont apply semi colon
+    //or write return Ok(();)
 }
