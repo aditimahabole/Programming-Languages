@@ -100,8 +100,13 @@ int rob(TreeNode* root,unordered_map<TreeNode*,int> &dp)
 
 int main() {
     string input;
-    getline(cin,input);
-    vector<string> nodes = split(input,' ');
+    vector<string> nodes;
+    while(cin>>input)
+    {
+      nodes.push_back(input);
+    }
+    // getline(cin,input);
+    // vector<string> nodes = split(input,' ');
     // cout<<"---------------"<<endl;
     // for(auto i:nodes) cout<<i<<endl;
     // cout<<"---------------"<<endl;
