@@ -22,6 +22,7 @@
 // ---------------------------------------------------------------------------------
 Code:
 
+
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
@@ -39,20 +40,33 @@ int solve(vector<int>&v,int l,int r,int turn)
         left = v[l]+solve(v,l+1,r,false);
         right = v[r]+solve(v,l,r-1,false);
     }
-    else
-    {
-        if(v[l]>v[r]) not_left = solve(v, l+1, r, true);
-        else not_right = solve(v, l, r-1, true);
-        return max(not_left, not_right);
-    }
+    // Instead of always trying to maximize the score we
+    // should try to minimize the opponent's score.
+    
+    // else
+    // {
+    //     maximizing it and thats not correct way
+    //     if(v[l]>v[r]) not_left = solve(v, l+1, r, true);
+    //     else not_right = solve(v, l, r-1, true);
+    //     return max(not_left, not_right);
+    // }
+    else {
+            int not_left = solve(v, l + 1, r, true);
+            int not_right = solve(v, l, r - 1, true);
+            return min(not_left, not_right);
+        }
     return max(left,right);
 }
 
 int main() {
   
     // vector<int> v = {11 ,20, 2, 10 };
-    vector<int> v ={15, 19 ,2, 10};
+    // vector<int> v ={15, 19 ,2, 10};
     // vector<int> v ={20, 11 ,10, 2};
+    // vector<int> v ={5, 3, 7, 10};
+    // vector<int> v ={8, 15, 3, 7};
+    vector<int> v ={20,30,2,2,2,10};
+    // vector<int> v ={2,2,2,2};
     int n = v.size();
     cout<<solve(v,0,n-1,true);
     return 0;
