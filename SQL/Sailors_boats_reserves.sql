@@ -313,3 +313,240 @@ where s2.sid = r2.sid and b2.bid=r2.bid
 group by s2.sid
 having count(r2.bid)>=1 and b2.color='red';
 SELECT '___________________________________________ ' AS message;
+
+-- OUTPUTS---->
+-----SAILORS TABLE----- 
+-----BOATS TABLE----- 
+-----RESERVES TABLE----- 
+----- INSERT INTO SAILORS TABLE----- 
+----- INSERT INTO BOATS TABLE----- 
+----- INSERT INTO RESERVES TABLE----- 
+----- ALL TABLES----- 
+sid sname rating age 
+10|nobita|3|19
+20|doremon|4|25
+30|sunio|3|30
+40|gian|1|35
+50|shizuka|5|18
+60|dekisuki|4|19
+70|jaiko|3|10
+80|dorami|5|15
+90|pokemon|2|16
+100|pikachu|5|5
+___________________________________________ 
+bid bname color 
+101|boat1|green
+102|boat2|red
+103|boat3|blue
+___________________________________________ 
+sid bid day 
+10|101|monday
+10|101|tuesday
+10|101|wednesday
+20|101|monday
+30|102|sunday
+30|103|saturdy
+50|102|sunday
+40|103|sunday
+50|101|tuesday
+20|103|wednesday
+30|102|thursday
+60|102|friday
+60|101|friday
+40|101|saturdy
+40|102|saturdy
+70|103|monday
+80|102|monday
+10|103|friday
+10|102|friday
+50|102|thursday
+___________________________________________ 
+3.Find all information of sailors who have reserved boat number 101. 
+10|nobita|3|19|10|101|monday
+10|nobita|3|19|10|101|tuesday
+10|nobita|3|19|10|101|wednesday
+20|doremon|4|25|20|101|monday
+50|shizuka|5|18|50|101|tuesday
+60|dekisuki|4|19|60|101|friday
+40|gian|1|35|40|101|saturdy
+___________________________________________ 
+4.Find the names of sailors who have reserved a red boat, and list in the order of age.
+dorami
+shizuka
+shizuka
+dekisuki
+nobita
+sunio
+sunio
+gian
+___________________________________________ 
+<<<<<Use of LEFT JOIN in Next Question>>>>
+nobita|101
+nobita|101
+nobita|101
+nobita|102
+nobita|103
+doremon|101
+doremon|103
+sunio|102
+sunio|102
+sunio|103
+gian|101
+gian|102
+gian|103
+shizuka|101
+shizuka|102
+shizuka|102
+dekisuki|101
+dekisuki|102
+jaiko|103
+dorami|102
+pokemon|
+pikachu|
+___________________________________________ 
+5.Find the names of sailors who have reserved at least one boat.
+nobita
+doremon
+sunio
+gian
+shizuka
+dekisuki
+jaiko
+dorami
+___________________________________________ 
+5.1.Find the names of sailors who have donot have any  reserved  boat.
+pokemon
+pikachu
+___________________________________________ 
+5.2.Find the names of sailors  and the count of boats only if they have reserved .
+dekisuki|2
+dorami|1
+doremon|2
+gian|3
+jaiko|1
+nobita|5
+shizuka|3
+sunio|3
+___________________________________________ 
+5.3.Find the count of boats of all sailors .
+nobita|5
+doremon|2
+sunio|3
+gian|3
+shizuka|3
+dekisuki|2
+jaiko|1
+dorami|1
+pokemon|0
+pikachu|0
+___________________________________________ 
+5.4.Find the names of sailors that have 0 boats reserved .
+pokemon|0
+pikachu|0
+___________________________________________ 
+5.5.Find the names of sailors who have reserved 2 boats.
+doremon
+dekisuki
+___________________________________________ 
+6.Find the ids and names of sailors who have reserved two different boats on the same day.
+dekisuki|102|friday
+dekisuki|101|friday
+gian|101|saturdy
+gian|102|saturdy
+nobita|103|friday
+nobita|102|friday
+___________________________________________ 
+6.1.Find the ids and names of sailors who have reserved Same  boats on the different day.
+10|nobita|101|monday
+30|sunio|102|sunday
+30|sunio|102|thursday
+10|nobita|101|tuesday
+10|nobita|101|wednesday
+___________________________________________ 
+7.Find the ids of sailors who have reserved a red boat or a green boat.
+10|nobita|101
+10|nobita|101
+10|nobita|101
+10|nobita|102
+20|doremon|101
+30|sunio|102
+30|sunio|102
+40|gian|101
+40|gian|102
+50|shizuka|101
+50|shizuka|102
+50|shizuka|102
+60|dekisuki|101
+60|dekisuki|102
+80|dorami|102
+___________________________________________ 
+Syntax 2 for 7. 
+10|nobita|101
+10|nobita|102
+20|doremon|101
+30|sunio|102
+40|gian|101
+40|gian|102
+50|shizuka|101
+50|shizuka|102
+60|dekisuki|101
+60|dekisuki|102
+80|dorami|102
+___________________________________________ 
+8.Count the number of different sailor names. 
+10
+___________________________________________ 
+9.Calculate the average age of all sailors. 
+19.2
+___________________________________________ 
+10.Find sid’s of all sailors who’ve reserved red boat but not green boat.
+30|sunio
+80|dorami
+___________________________________________ 
+Syntax 2 for 10.
+30|sunio
+80|dorami
+___________________________________________ 
+11.Find the average age of sailors for each rating level that has at least two sailors.
+3|19.6666666666667
+4|22.0
+5|12.6666666666667
+___________________________________________ 
+Syntax 2 for 11.
+3|19.6666666666667
+4|22.0
+5|12.6666666666667
+___________________________________________ 
+12.Find the names of the sailors who have reserved both a red and a blue boat.
+sunio
+___________________________________________ 
+13.Find the sailor id’s of sailors whose rating is better than some sailor called Nobita.
+doremon|4
+shizuka|5
+dekisuki|4
+dorami|5
+pikachu|5
+___________________________________________ 
+Syntax 2 for 13. 
+20|doremon|4
+50|shizuka|5
+60|dekisuki|4
+80|dorami|5
+100|pikachu|5
+___________________________________________ 
+14.List the names of those sailors whose name has only five characters and third alphabet ends with i
+jaiko
+___________________________________________ 
+15.Find the SID of all sailors who have reserved red boats but not green boats.
+30
+80
+___________________________________________ 
+16.Find name of salilors that have only 1 boat and is of red color.
+80|dorami|5|15|80|102|monday|102|boat2|red
+___________________________________________ 
+17.Find name of sailors that only have red boats and not any other color.
+30|sunio|3|30|30|102|sunday|102|boat2|red
+50|shizuka|5|18|50|102|sunday|102|boat2|red
+60|dekisuki|4|19|60|102|friday|102|boat2|red
+80|dorami|5|15|80|102|monday|102|boat2|red
+___________________________________________ 
