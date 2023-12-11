@@ -31,8 +31,10 @@
 <hr>
 <h3>Add Object</h3>
 <p>Layout -> Add -> whatever you wanna add</p>
+<li>Shift + A : shortcut to add any object </li>
 <img width="533" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/aef48e80-72b2-4b7e-8316-31576a74580c">
 <img width="478" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/5ca0da1f-753e-4577-8cef-7c16e907d0c8">
+<hr>
 
 
 
