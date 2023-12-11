@@ -1,6 +1,6 @@
 # Basics
 <h3>Grab</h3>
-+ hello 
++ text in green
 <li> <span style="color:green;" >G (Grab) </span> : object gets selected and we can move it any where , after we left click it will stay at that position</li>
 <li><span color="green" >G then X </span> : object gets selected and we can move on X axis</li>
 <li><span color="green" >G then Y </span> : object gets selected and we can move on Y axis</li>
