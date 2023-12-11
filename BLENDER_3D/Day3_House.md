@@ -43,7 +43,7 @@
 <img width="487" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/2f357b4f-4229-426c-add8-6387e043dc51">
 <img width="475" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/212f092c-ed51-467f-9dbb-6e17d6c59e21">
 <img width="482" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/1714a6a5-c55e-4679-b140-a9370d524333">
-<img width="583" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/b5832041-cf5f-45ba-bb7c-fe8015a4d193">
+<img width="475" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/b5832041-cf5f-45ba-bb7c-fe8015a4d193">
 <h6>Looking nice</h6>
 
 
