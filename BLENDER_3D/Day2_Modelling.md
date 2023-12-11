@@ -32,11 +32,24 @@
 <hr>
 <img width="172" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/fc3fb6be-636e-4c5e-80aa-13fe11ac47a7">
 <hr>
-<li>Select bottom face of abject </li>
+<li>Select bottom face of object </li>
 <li>Press E and extend it downwards</li>
 <hr>
 <img width="447" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/80ea974c-b9c9-4afc-af67-6013e8e94b20">
 <hr>
+<h3>Cars front face</h3>
+<li>Select Front face , Press E extend it.</li>
+<hr>
+<img width="493" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/57583e30-604a-4beb-b15c-5e8d763967ca">
+<img width="478" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/4e6e42de-6e6c-423c-8922-cc9843a25748">
+<hr>
+<li>Now select front two points to give a slant shape , press G and adjust it </li>
+<hr>
+<img width="521" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/dcfa3ed8-d6e4-481c-aa59-87a23d3a1174">
+
+
+
+
 
 
 
