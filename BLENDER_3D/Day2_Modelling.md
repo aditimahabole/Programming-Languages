@@ -45,7 +45,26 @@
 <hr>
 <li>Now select front two points to give a slant shape , press G and adjust it </li>
 <hr>
+<img width="223" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/fc45e4dd-fc4f-4807-81f7-b174be5eb474">
+
 <img width="521" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/dcfa3ed8-d6e4-481c-aa59-87a23d3a1174">
+<hr>
+<h3>Bevel Tool : For smoothing the edges to curve</h3>
+<li>Press CTRL + B , and then when u use scroll button of your mouse more edges getting add which make it smooth</li>
+<hr>
+<img width="459" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/b2881681-11d3-4327-8466-a71f9064df19">
+<hr>
+<li>beveling the top two edges </li>
+<li>To select multiple items first select an object then press "Shift"  and then click on other object (in our case its other edge)</li>
+<li>Press CTRL+B and its get smooth</li>
+<hr>
+<img width="613" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/20b2d4b5-8e76-4ee6-9629-9120ea8c7e9b">
+<hr>
+<li>Our Basic car is made! hurray</li>
+
+
+
+
 
 
 
