@@ -1,4 +1,6 @@
 # Basics
+<h3>Select Multiple Objects or faces or edges or points</h3>
+<li>Press Shift and click on the object</li>
 <h3>Grab</h3>
 <li> <span color="green" >G (Grab) </span> : object gets selected and we can move it any where , after we left click it will stay at that position</li>
 <li><span color="green" >G then X </span> : object gets selected and we can move on X axis</li>
