@@ -23,6 +23,9 @@
 <br>
 <img width="342" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/458e6533-4a88-4202-8915-7df7af47fb1a">
 <br>
+<li>Now select bottom two points and then press G then Y to make it look like car's backside</li>
+<img width="434" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/feb8c9d6-cdac-4985-b786-3e503585ac30">
+
 
 
 
