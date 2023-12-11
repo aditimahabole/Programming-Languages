@@ -22,6 +22,21 @@
 <h3>Right side portion </h3>
 <p>Object properties : gives X , Y , Z points</p>
 <img width="201" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/d8154501-db71-48d5-a3a3-9d998e523d9b">
+<h3>Viewport</h3>
+<p>Mouse Middle Button : after clicking this we will be able to see the 3D view of object like we can see it from any angle.</p>
+<hr>
+<img width="664" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/19a02ef6-f563-4f03-bfff-30e4768faa07">
+<p>Scene collector : all the objects we are using is kept here</p>
+<img width="165" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/be9cb1d6-5abf-4965-8fad-8c62d424b926">
+<hr>
+<h3>Add Object</h3>
+<p>Layout -> Add -> whatever you wanna add</p>
+<img width="533" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/aef48e80-72b2-4b7e-8316-31576a74580c">
+<img width="478" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/5ca0da1f-753e-4577-8cef-7c16e907d0c8">
+
+
+
+
 
 
 
