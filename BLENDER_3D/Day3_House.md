@@ -45,6 +45,18 @@
 <img width="482" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/1714a6a5-c55e-4679-b140-a9370d524333">
 <img width="475" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/b5832041-cf5f-45ba-bb7c-fe8015a4d193">
 <h6>Looking nice</h6>
+<hr>
+<h3>Inset Tool: press I , makes face small</h3>
+<img width="600" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/b3871bce-d411-40fd-86a0-99b2801569c6">
+<img width="601" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/8e983179-e829-45b0-b250-65f254ae4787">
+<hr>
+<li>Select face Press E to extend inwards</li>
+<li>Select face and delete Faces</li>
+<hr>
+<img width="543" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/07930c59-a827-4986-984d-2fea5cf1bfbb">
+
+
+
 
 
 
