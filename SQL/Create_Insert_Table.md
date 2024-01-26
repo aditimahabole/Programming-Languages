@@ -1,6 +1,6 @@
 <h4>Create EmployeeInfo Table</h4>
 
-+     CREATE TABLE EmployeeInfo (
+      CREATE TABLE EmployeeInfo (
       EmpID INT,
       EmpFname VARCHAR(50),
       EmpLname VARCHAR(50),
@@ -13,7 +13,7 @@
 
 <h4>Insert into EmployeeInfo Table</h4>
 
-+      INSERT INTO EmployeeInfo (EmpID, EmpFname, EmpLname, Department, Project, Address, DOB, Gender) VALUES
+      INSERT INTO EmployeeInfo (EmpID, EmpFname, EmpLname, Department, Project, Address, DOB, Gender) VALUES
       (1, 'Sanjay', 'Mehra', 'HR', 'P1', 'Hyderabad(HYD)', '1976-12-01', 'M'),
       (2, 'Ananya', 'Mishra', 'Admin', 'P2', 'Delhi(DEL)', '1968-05-02', 'F'),
       (3, 'Rohan', 'Diwan', 'Account', 'P3', 'Mumbai(BOM)', '1980-01-01', 'M'),
@@ -51,7 +51,7 @@
   <hr>
   <h4> Write a query to fetch the EmpFname from the EmployeeInfo table in upper case and use the ALIAS name as EmpName.</h4>
 
-        select UPPER(EmpFname) as Ename from EmployeeInfo;
+      select UPPER(EmpFname) as Ename from EmployeeInfo;
 <hr>
 <img width="591" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/4b1644c1-6129-4c6e-b580-7533ddaa1f7c">
 <hr>
@@ -61,17 +61,18 @@
       select count(EmpID) as HRcount from EmployeeInfo
       where Department = 'HR' 
       group by Department ;
+      
 <li>Admin only</li>
 
       select count(EmpID) as Admincount from EmployeeInfo
       where Department = 'Admin' 
       group by Department ;
+      
  <li>Account only</li>
  
       select count(EmpID) as Accountcount from EmployeeInfo
       where Department = 'Account' 
       group by Department ;
-
 
 <hr>
 <img width="609" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/e8d25094-4bbb-415a-a975-d25e0558be98">
@@ -83,7 +84,9 @@
       group by Department
       order by NoOfEmp desc , Department asc;
 <hr>
+
 <img width="588" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/60399cac-39e0-4baf-a7e7-4b2482ed4973">
+
 <hr>
 
 <h4>Write a query to retrieve the first four characters of  EmpLname from the EmployeeInfo table.</h4>
@@ -235,6 +238,17 @@
 <hr>
 <img width="757" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/570c513c-6e75-4db0-8e29-97fde22a6ba9">
 <hr>
+
+<h4> Write a query to fetch details of employees with the address as “DELHI(DEL)”.</h4>
+
+      SELECT EmpFname,EmpLname
+      FROM EmployeeInfo 
+      WHERE Address LIKE 'DELHI(DEL)%';
+
+<hr>
+<img width="461" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/a1909a7a-4556-4b43-ad32-cfbc102201b7">
+<hr>
+
 
  
  
