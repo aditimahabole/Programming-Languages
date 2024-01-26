@@ -110,6 +110,25 @@
 <hr>
 <h4> Write a query to create a new table which consists of data and structure copied from the other table.</h4>
 
+      create table MynewTable as
+      Select * from EmployeeInfo
+      where 1 = 0;
+<br>
+<li>1 = 0 will be false so nothing will be selected from EmployeeInfo means we copied structure same as EmployeeInfo in MynewTable and not its data</li>
+<br>
+
+      create table OtherMynewTable as
+      Select * from EmployeeInfo
+      where 1 = 1;
+<br>
+<li>Data will also be copied along with structure</li>
+<hr>
+<img width="650" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/ca700729-a0ff-4197-bc6c-deda75cc130b">
+
+<img width="650" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/9fff3172-3f3a-4402-af1e-2dc9cf51335c">
+
+<hr>
+
 
 
 
