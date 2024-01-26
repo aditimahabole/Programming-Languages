@@ -213,13 +213,13 @@
 <hr>
 <h4>Top n Salaries from Last / Last N salaries</h4>
 + Top n Salaries from last
-- Top 2 Salary from last 
-- The inner query tells us that how many salary in e2 are less than e1 and if it is < 2 then we return 
-- 4th from last mean 3 salary are less than that salary
-- 3rd from last means 2 salary are smaller than that salary
-- 2nd from last means only 1 is smaller than that salary
-- 1st from last means no salary is smaller than that salary
-- So we will calculate how many salaries of e2 are smaller '<' than e1 table salary
++ Top 2 Salary from last 
++ The inner query tells us that how many salary in e2 are less than e1 and if it is < 2 then we return 
++ 4th from last mean 3 salary are less than that salary
++ 3rd from last means 2 salary are smaller than that salary
++ 2nd from last means only 1 is smaller than that salary
++ 1st from last means no salary is smaller than that salary
++ So we will calculate how many salaries of e2 are smaller '<' than e1 table salary
 
       SELECT e1.Salary FROM EmployeePosition e1
       WHERE 
@@ -228,10 +228,10 @@
        WHERE e2.Salary<e1.Salary
        ) < 2
        order by e1.Salary desc;
- - esi salary batao jisse 1 ya 0 chote salary chote ho
- - 85000 se ek choti salary hai ie 75000 so ye aaega
- - 75000 se ek bhi chota nhi hai count = 0 <2 hai so ye bhi aaega
- - For Top N we use e2>e1 and for Last N we use e2<e1 Just a Trick to remember
++ esi salary batao jisse 1 ya 0 chote salary chote ho
++ 85000 se ek choti salary hai ie 75000 so ye aaega
++ 75000 se ek bhi chota nhi hai count = 0 <2 hai so ye bhi aaega
++ For Top N we use e2>e1 and for Last N we use e2<e1 Just a Trick to remember
 <hr>
 <img width="757" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/570c513c-6e75-4db0-8e29-97fde22a6ba9">
 <hr>
