@@ -216,6 +216,7 @@
 <img width="785" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/56148655-ed43-471d-aa70-c5d0406f001e">
 <hr>
 <h4>Top n Salaries from Last / Last N salaries</h4>
+
 + Top n Salaries from last
 + Top 2 Salary from last 
 + The inner query tells us that how many salary in e2 are less than e1 and if it is < 2 then we return 
@@ -225,6 +226,7 @@
 + 1st from last means no salary is smaller than that salary
 + So we will calculate how many salaries of e2 are smaller '<' than e1 table salary
 
+
       SELECT e1.Salary FROM EmployeePosition e1
       WHERE 
       (SELECT COUNT(DISTINCT Salary) 
@@ -232,6 +234,7 @@
        WHERE e2.Salary<e1.Salary
        ) < 2
        order by e1.Salary desc;
+  
 + esi salary batao jisse 1 ya 0 chote salary chote ho
 + 85000 se ek choti salary hai ie 75000 so ye aaega
 + 75000 se ek bhi chota nhi hai count = 0 <2 hai so ye bhi aaega
