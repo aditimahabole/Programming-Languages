@@ -1,5 +1,4 @@
 <h1>Create a Employee Table </h1>
---
 
 +     CREATE TABLE EmployeePosition (
        EmployeeID INT PRIMARY,
@@ -12,7 +11,6 @@
 
 
 <h1>Insert into Employee Table </h1>
--- 
 
 +     INSERT INTO EmployeePosition (EmployeeID, Salary, Position) VALUES
        (1, 50000, 'Manager'),
@@ -28,9 +26,9 @@
 
 <hr>
 <h1>Dropping Table</h1>
-<li>DROP TABLE IF EXISTS EmployeePosition;</li>
+
++      DROP TABLE IF EXISTS EmployeePosition;
 <h1>Sort table according to Salary in descending order</h1>
--- query
 
 +     select * from EmployeePosition order by Salary desc;
 <hr>
@@ -39,7 +37,6 @@
 
 
 <h1>1.Write a query to find the Nth highest salary from the table without using TOP/limit keyword</h1> 
-
 -- esi salary batao jisse koi bada nhi
 
 +      SELECT distinct( Salary ) as maxSalary
