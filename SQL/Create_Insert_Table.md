@@ -156,7 +156,8 @@
       WHERE SUBSTRING(EmpFname,1, 1) = 'S';      
 <br>
 <hr>
-<img width="765" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/cc02cb2a-8bb7-4f0f-8057-3c97058a9ecf">
+<img width="463" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/8dd7bf30-9127-4855-ac6e-93a47408bec1">
+
 <hr>
 <h4>Names of employees having last letter as n or anything you want</h4>
 
