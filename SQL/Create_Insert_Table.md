@@ -1,4 +1,4 @@
-<img width="772" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/2529c9d4-479c-4174-8916-3a3389d44402"><h4>Create EmployeeInfo Table</h4>
+<h4>Create EmployeeInfo Table</h4>
 
 +     CREATE TABLE EmployeeInfo (
       EmpID INT,
