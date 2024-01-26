@@ -40,13 +40,21 @@
   <hr>
   <img width="342" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/2c7d3cc7-31ff-4ea5-9b85-5dea35462a81">
 
-  <img width="332" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/1cfa8630-f2d9-48e0-8c34-10d6500a653b">
+  <img width="342" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/1cfa8630-f2d9-48e0-8c34-10d6500a653b">
 
-  <img width="328" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/3e77e17a-4aa7-4fa1-9b14-2ca38e7f8d5e">
+  <img width="342" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/3e77e17a-4aa7-4fa1-9b14-2ca38e7f8d5e">
 
   <img width="919" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/19ed5acb-f0f9-4499-b8a6-dcdd0770a79f">
 
   <hr>
+  <h2> Write a query to fetch the EmpFname from the EmployeeInfo table in upper case and use the ALIAS name as EmpName.</h2>
+
+  +     select UPPER(EmpFname) as Ename from EmployeeInfo;
+  <hr>
+  <img width="591" alt="image" src="https://github.com/aditimahabole/DSA-SQL-PYTHON-ALL-TECH-STUFF/assets/78752342/4b1644c1-6129-4c6e-b580-7533ddaa1f7c">
+  <hr>
+
+
 
 
 
