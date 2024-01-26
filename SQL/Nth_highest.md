@@ -37,11 +37,11 @@ INSERT INTO EmployeePosition (EmployeeID, Salary, Position) VALUES
 
 -- esi salary batao jisse koi bada nhi
 
-+ SELECT distinct( Salary ) as maxSalary
-+ FROM EmployeePosition E1 
-+ WHERE 0 =  (SELECT COUNT(DISTINCT E2.Salary) 
-+      FROM EmployeePosition E2 
-+       WHERE E2.Salary > E1.Salary);
++      SELECT distinct( Salary ) as maxSalary
+       FROM EmployeePosition E1
+      WHERE 0 =  (SELECT COUNT(DISTINCT E2.Salary) 
+      FROM EmployeePosition E2 
+       WHERE E2.Salary > E1.Salary);
    esi salary batao jisse sirf 1 bada hai
  SELECT distinct( Salary ) as secmaxSalary
 FROM EmployeePosition E1 
