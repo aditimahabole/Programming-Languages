@@ -1,3 +1,8 @@
+## Strategic Desing Pattern
++ Used to avoid duplicacy of code in Siblings
++ We make use of Interface
+
+
 ![image](https://github.com/aditimahabole/Programming-Languages/assets/78752342/8b17500f-709d-4c72-ac5f-9f31c971c529)
 
 <br>
