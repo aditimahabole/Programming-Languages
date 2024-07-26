@@ -1,4 +1,4 @@
-# Get Methods
+# @GetMapping Get Methods
 
 + Controller -> Service -> Dao(Database)
 
