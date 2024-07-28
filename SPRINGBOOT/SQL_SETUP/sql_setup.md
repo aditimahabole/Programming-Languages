@@ -26,6 +26,10 @@
     # -----------------start of app db schema will be updated-----------
     spring.jpa.hibernate.ddl-auto=update
     spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+
+    # ----------Use below command on SQLshell command line--------------
+    # \connect social-media-user@localhost:3306
+
     
     
     # --------------------------docker command--------------------------
