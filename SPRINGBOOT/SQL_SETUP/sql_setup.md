@@ -40,6 +40,11 @@
     # --env MYSQL_DATABASE=social-media-database 
     # --name mysql --publish 3306:3306 mysql:8-oracle
 
+
+
+
+
+
 ### pom.xml
 
     <dependency>
@@ -48,3 +53,9 @@
     			<version>8.0.30</version>
     </dependency>
 
+<hr>
+
+![image](https://github.com/user-attachments/assets/7f9a70ac-79ec-4d8a-8f70-edef4d76b9dd)
+
+
+![image](https://github.com/user-attachments/assets/7ac038b1-a22f-4b37-a74e-864f63459bfd)
