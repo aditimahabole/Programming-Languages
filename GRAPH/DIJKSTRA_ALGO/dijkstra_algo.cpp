@@ -1,8 +1,4 @@
-//{ Driver Code Starts
-#include<bits/stdc++.h>
-using namespace std;
-
-// } Driver Code Ends
+// TC : V *(logV + ElogV) = VlogV(1+E) = EVlogV
 class Solution
 {
 	public:
@@ -24,23 +20,23 @@ class Solution
        pq.push({0,S});
        
        
-       while(!pq.empty()){
+       while(!pq.empty()){ // --->  V
            
            int dist = pq.top().first;
            int node = pq.top().second;
-           pq.pop();
+           pq.pop();  // ---> log(V)
            
            // travserse the neighbourrs
            
-           for(auto &vec:adj[node]){
+           for(auto &vec:adj[node]){  // ----> E
                
                int adjNode = vec[0];
                int wt      = vec[1];
                
-               if(dist + wt < res[adjNode]){
+               if(dist + wt < res[adjNode]){  
                    res[adjNode] = dist+wt;
                    // push the node with distance 
-                   pq.push({dist+wt , adjNode});
+                   pq.push({dist+wt , adjNode}); // log(V) push pop op in prioruty queue
                    
                }
            }
